@@ -14,7 +14,7 @@ def password(request):
     characters = list('abcdefghijklmnoprstuvwxyz')
 
     if request.GET.get('uppercase'):
-        characters.extend(list('ABCDEFGHIJKLMNOPQRSTUVWXYZ'))
+        characters.extend(list('ABCDEFGHIJKLMNOPQRST1UVWXYZ'))
     if request.GET.get('special'):
         characters.extend(list('!@#$%^&*()'))
     if request.GET.get('numbers'):
